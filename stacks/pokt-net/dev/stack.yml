@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   node1.pokt:
-    image: poktnetwork/pocket-core:RC-0.6.3-latest-local
+    image: poktnetwork/pocket-core:latest-local
     build:
       context: ${POCKET_CORE_REPO_PATH}
       dockerfile: ${CWD}/docker/pokt-net/dev/Dockerfile
@@ -32,7 +32,7 @@ services:
       - poktnet
 
   node2.pokt:
-    image: poktnetwork/pocket-core:RC-0.6.3-latest-local
+    image: poktnetwork/pocket-core:latest-local
     build:
       context: ${POCKET_CORE_REPO_PATH}
       dockerfile: ${CWD}/docker/pokt-net/dev/Dockerfile
@@ -62,7 +62,7 @@ services:
       - poktnet
 
   node3.pokt:
-    image: poktnetwork/pocket-core:RC-0.6.3-latest-local
+    image: poktnetwork/pocket-core:latest-local
     build:
       context: ${POCKET_CORE_REPO_PATH}
       dockerfile: ${CWD}/docker/pokt-net/dev/Dockerfile
